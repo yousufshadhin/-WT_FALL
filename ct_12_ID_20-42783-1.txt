@@ -1,0 +1,77 @@
+1.
+declare
+a number:=:a;
+b number:=:b;
+c number;
+
+begin
+c:=a*b;
+dbms_output.put_line(c);
+End;
+
+
+2.
+declare
+a number :=:a;
+b number :=:b;
+
+begin
+case 
+when a=b then dbms_output.put_line(a+b);
+else dbms_output.put_line('Numbers are different');
+end case;
+
+end;
+
+
+3.
+declare
+str1 varchar2(50) :=:String_1;
+str2 varchar2(50) :=:String_2;
+
+begin
+if(str1 = str2) then
+ dbms_output.put_line('String Equal');
+elsif(str1<>str2) then
+ dbms_output.put_line('Strings are different');
+end if;
+
+end;
+
+4.
+declare
+a number :=:a;
+b number :=:b;
+c number;
+
+begin
+c:= a+b;
+
+if(c<100)then
+ dbms_output.put_line('Hi');
+elsif(c>100)then
+ dbms_output.put_line('Bye');
+else
+ dbms_output.put_line('ADBMS');
+end if;
+
+end;
+
+5.
+declare
+a number :=:a;
+b number :=:b;
+
+begin
+case 
+when a=b then dbms_output.put_line('Numbers are identical');
+else dbms_output.put_line('Numbers are different');
+end case;
+
+end;
+
+
+Part 2:
+
+
+
